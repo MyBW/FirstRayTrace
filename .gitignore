@@ -16,6 +16,8 @@
 *.idb
 *.pdb
 *.db
+*.suo
+*.ilk
 # Compiled Dynamic libraries
 *.so
 *.dylib
