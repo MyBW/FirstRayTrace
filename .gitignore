@@ -11,6 +11,11 @@
 *.gch
 *.pch
 *.ipch
+*.log
+*.tlog
+*.idb
+*.pdb
+*.db
 # Compiled Dynamic libraries
 *.so
 *.dylib
