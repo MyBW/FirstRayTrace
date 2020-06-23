@@ -124,6 +124,12 @@
     </PostBuildEvent>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClInclude Include="DXRHelper.h" />
+    <ClInclude Include="nv_helpers_dx12\BottomLevelASGenerator.h" />
+    <ClInclude Include="nv_helpers_dx12\RaytracingPipelineGenerator.h" />
+    <ClInclude Include="nv_helpers_dx12\RootSignatureGenerator.h" />
+    <ClInclude Include="nv_helpers_dx12\ShaderBindingTableGenerator.h" />
+    <ClInclude Include="nv_helpers_dx12\TopLevelASGenerator.h" />
     <ClInclude Include="Win32Application.h" />
     <ClInclude Include="D3D12HelloTriangle.h" />
     <ClInclude Include="d3dx12.h" />
@@ -132,6 +138,21 @@
     <ClInclude Include="stdafx.h" />
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="nv_helpers_dx12\BottomLevelASGenerator.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="nv_helpers_dx12\RaytracingPipelineGenerator.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="nv_helpers_dx12\RootSignatureGenerator.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="nv_helpers_dx12\ShaderBindingTableGenerator.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="nv_helpers_dx12\TopLevelASGenerator.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">NotUsing</PrecompiledHeader>
+    </ClCompile>
     <ClCompile Include="Win32Application.cpp" />
     <ClCompile Include="D3D12HelloTriangle.cpp" />
     <ClCompile Include="DXSample.cpp" />
